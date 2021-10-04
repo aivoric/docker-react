@@ -5,6 +5,7 @@ RUN npm install
 COPY . .
 # No need for volumes here since this is production
 RUN npm run build
+
 # /app/build <--- that's where all the final built app content will be
 
 FROM nginx
